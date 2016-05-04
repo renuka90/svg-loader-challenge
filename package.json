@@ -1,0 +1,21 @@
+{
+  "name": "svg-loader-challenge",
+  "version": "1.0.0",
+  "description": "svg-loader-challenge",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "white.nl",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WHITEdevelopment/svg-loader-challenge.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-connect": "^3.2.2",
+    "gulp-sass": "^2.2.0"
+  }
+}
