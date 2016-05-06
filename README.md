@@ -28,8 +28,9 @@ gulp demo
 ```
 
 ## Things to check
-* keep it simple!
-* Comment decisions or you make and why you made them in the code.
+* Keep it simple!
+* Create comments on decisions you make and why you made them in the code.
+* Create comments on difficulties you had along the way in the code.
 * SEO Readable text with Header logo
 
 We aim to make this challenge a good learning experiance for all our candidates. Please provide us with some feadback on how we could inprove.
