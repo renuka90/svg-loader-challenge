@@ -2,7 +2,8 @@
 // Ddependencies 
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    open = require('gulp-open');
 
 /**
  * Process the sass into demo folder.
@@ -36,6 +37,13 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
+/**
+ * Open browser window with the default application.
+ */
+gulp.task('open', function(){
+  gulp.src(__filename)
+  .pipe(open({uri: 'http://localhost:8080/demo.html'}));
+});
 
 /**
  * Watch for file changes and update the browser window on change.
@@ -46,4 +54,4 @@ gulp.task('watch', function () {
   gulp.watch(['./style.scss'], ['sass']);
 });
 
-gulp.task('demo', ['sass','connect', 'watch']);
+gulp.task('demo', ['sass','connect', 'watch', 'open']);
