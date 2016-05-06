@@ -5,7 +5,7 @@
 Welcome! Your experiance with this challenge is more important to us than the actual end result. Try to learn and have fun!
 
 ## General direction
-The white logo is currently quite plain. Jesse who runs the sales department would like to make it more interesting by using the logo as a Loading Spinner. His plan is to ask a couple of developers to create a concept. 
+The white logo is currently quite plain. Jesse who runs the sales department would like to make it more interesting by using the logo as a Loading Spinner. His plan is to ask a couple of developers to create a concept. To help out he created a project on https://github.com/WHITEdevelopment/svg-loader-challenge.git.
 
 ## Getting started
 
