@@ -15,7 +15,7 @@ Some inspiration
 
 We have created a very effective development environment for you. Files you need are in the ./src folder. We also added a basic svg logo to get you started. You can often find tips inside files (code comments). Do checkout the gulpfile.js as it contains info on how to make your development server even better.
 
--- Make sure you have nodejs installed on you machine. Installation instructions can be found on https://nodejs.org/en/. We used version 4.4.4
+-- Make sure you have nodejs installed on your machine. Installation instructions can be found on https://nodejs.org/en/. We used version 4.4.4
 ```
 // To check installation run command
 node --version
