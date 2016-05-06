@@ -2,7 +2,7 @@
 
 ![blue logo](demo/docs/logoblue.png)
 
-Welcome! Your experience with this challenge is more important to us than the actual end result. Try to learn and have fun! With this challenge can show us what knowledge you have and how you acquire new techniques.
+Welcome! Your experience with this challenge is more important to us than the actual end result. Try to learn and have fun! This challenge can show us what knowledge you have and how you acquire new techniques.
 
 ## General direction
 The white logo is currently quite plain. Jesse who runs the sales department would like to make it more interesting by using the logo as a Loading Spinner. His plan is to ask a couple of developers to create a concept. To help out he created a project on https://github.com/WHITEdevelopment/svg-loader-challenge.git.
