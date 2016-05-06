@@ -9,11 +9,11 @@ The white logo is currently quite plain. Jesse who runs the sales department wou
 
 Some inspiration
 * [http://codepen.io/aurer/pen/jEGbA](http://codepen.io/aurer/pen/jEGbA)
-* [Actual spinner / loader logo in action](Actual spinner / loader logo in action)
+* [Actual spinner / loader logo in action](https://gitlab.com/gitlab-com/gitlab-artwork)
 
 ## Getting started
 
-We have created a very effective developement environment for you. Files you need are in the ./src folder. We also added a basic svg logo to get you started. You can often find tips inside files (code comments). Do checkout the gulpfile.js as it contains info on how to make your development server even better.
+We have created a very effective development environment for you. Files you need are in the ./src folder. We also added a basic svg logo to get you started. You can often find tips inside files (code comments). Do checkout the gulpfile.js as it contains info on how to make your development server even better.
 
 -- Make sure you have nodejs installed on you machine. Installation instructions can be found on https://nodejs.org/en/. We used version 4.4.4
 ```
@@ -21,12 +21,12 @@ We have created a very effective developement environment for you. Files you nee
 node --version
 ```
 
--- Go into your project folder and run the following command to install the developement server
+-- Go into your project folder and run the following command to install the development server
 ```
 npm install
 ```
 
--- Start the developement server using the following command. keep the command line window open. It runs the build process. A browser window should open.
+-- Start the development server using the following command. keep the command line window open. It runs the build process. A browser window should open.
 ```
 gulp demo
 ```
@@ -37,4 +37,4 @@ gulp demo
 * Create comments on difficulties you had along the way in the code.
 * SEO Readable text with Header logo
 
-We aim to make this challenge a good learning experience for all our candidates. Please provide us with some feadback on how we could inprove.
+We aim to make this challenge a good learning experience for all our candidates. Please provide us with some feedback on how we could improve.
