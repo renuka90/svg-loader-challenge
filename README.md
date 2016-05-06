@@ -26,7 +26,7 @@ node --version
 npm install
 ```
 
--- Start the development server using the following command. keep the command line window open. It runs the build process. A browser window should open.
+-- Start the development server using the following command and don't close the command line window. It runs the build process. A browser window should open.
 ```
 gulp demo
 ```
