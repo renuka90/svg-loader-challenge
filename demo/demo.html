@@ -17,9 +17,97 @@
             <div class="whi__docs__header__content">
                 <h1>Welcome to</h1>
                 <h2>svg loader challenge</h2>
-                <img src="/docs/logo.png"/>
+                <!-- <img src="/docs/logo.png"/> -->
                 <!-- TIP: use inline svg here -->
+                <!-- svg logo white -->
+                <svg version="1.1" id="logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" viewBox="0 0 200 27" xml:space="preserve">
+                <g class="logo_svg_main" area-labelledby="spinner-title">
+                    <title id="spinner-title">Loading Spinner white logo</title>
+                    <!-- letter W -->
+                    <!-- Path is one way to draw shape in svg.
+                        Based on "d" coordinates, letters are determined and arranged accordingly
+                    -->
+                    <path fill="#FFFFFF" d="M46.232,0v14.907c-0.006,3.459-2.869,6.308-6.339,6.313l-12.19,0.002V2.375h-4.562v18.848H10.948
+                        c-3.468-0.008-6.33-2.856-6.336-6.315V0H0.051L0.049,14.907c0.01,5.989,4.889,10.848,10.899,10.858h28.946
+                        c6.011-0.011,10.891-4.869,10.899-10.858V0H46.232z">
+                        <!-- Here, I prefer translate tranformation to give a wave like animation  -->
+                       <animateTransform attributeType="xml"
+                            attributeName="transform" type="translate"
+                            values="0 0; 0 30; 0 0; 0 -30; 0 0"
+                            begin="0s" dur="2s" repeatCount="indefinite" />
+                    </path>
+
+                   <!--  letter H -->
+                   <polygon fill="#FFFFFF" points="90.833,0 90.833,10.611 66.004,10.611 66.004,0 61.444,0 61.444,25.765 66.004,25.765
+                        66.004,15.153 90.833,15.153 90.833,25.765 95.395,25.765 95.395,0">
+                        <animateTransform attributeType="xml"
+                            attributeName="transform" type="translate"
+                            values="0 0; 0 30; 0 0; 0 -30; 0 0"
+                            begin="0.2s" dur="2s" repeatCount="indefinite" />
+
+                    </polygon>
+                   <!--  letter I -->
+                    <polygon fill="#FFFFFF" points="107.883,25.765 107.883,0 112.447,0 112.447,25.765 107.883,25.765">
+                        <animateTransform attributeType="xml"
+                            attributeName="transform" type="translate"
+                            values="0 0; 0 30; 0 0; 0 -30; 0 0"
+                            begin="0.4s" dur="2s" repeatCount="indefinite" />
+
+                    </polygon>
+
+                    <!-- letter T --> 
+                    <polygon fill="#FFFFFF" points="156.123,0 122.173,0 122.173,4.543 136.871,4.543 136.871,25.765 141.43,25.765 141.43,4.543
+                        156.123,4.543">
+                        <animateTransform attributeType="xml"
+                            attributeName="transform" type="translate"
+                            values="0 0; 0 30; 0 0; 0 -30; 0 0"
+                            begin="0.6s" dur="2s" repeatCount="indefinite" />
+                     </polygon>
+
+                   <!--  letter E -->
+                    <path fill="#FFFFFF" d="M173.167,4.543H200V0h-26.833c-4.826,0.008-8.739,3.907-8.747,8.709v8.345
+                        c0.008,4.805,3.921,8.7,8.747,8.711H200v-4.543h-26.833c-2.288-0.004-4.182-1.889-4.185-4.168v-1.901h27.098v-4.542h-27.098
+                        V8.709C168.985,6.435,170.878,4.549,173.167,4.543z">
+                        <animateTransform attributeType="xml"
+                            attributeName="transform" type="translate"
+                            values="0 0; 0 30; 0 0; 0 -30; 0 0"
+                            begin="0.8s" dur="2s" repeatCount="indefinite" />
+
+                    </path>
+                 </g>
+            </svg>
             </div>
+            <!-- translate animation using css -->
+             <svg version="1.1" id="white__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" viewBox="0 0 200 27" xml:space="preserve">
+            <g class="logo_svg_main">
+
+              <path id="w" class="wave" fill="#FFFFFF" d="M46.232,0v14.907c-0.006,3.459-2.869,6.308-6.339,6.313l-12.19,0.002V2.375h-4.562v18.848H10.948
+                    c-3.468-0.008-6.33-2.856-6.336-6.315V0H0.051L0.049,14.907c0.01,5.989,4.889,10.848,10.899,10.858h28.946
+                    c6.011-0.011,10.891-4.869,10.899-10.858V0H46.232z">
+              </path>
+
+
+              <!--H-->
+              <polygon id="h" class="wave" fill="#FFFFFF" points="90.833,0 90.833,10.611 66.004,10.611 66.004,0 61.444,0 61.444,25.765 66.004,25.765
+                       66.004,15.153 90.833,15.153 90.833,25.765 95.395,25.765 95.395,0">
+              </polygon>
+
+              <polygon id="i" class="wave" fill="#FFFFFF" points="107.883,25.765 107.883,0 112.447,0 112.447,25.765 107.883,25.765">
+              </polygon>
+
+              <polygon id="t" class="wave" fill="#FFFFFF" points="156.123,0 122.173,0 122.173,4.543 136.871,4.543 136.871,25.765 141.43,25.765 141.43,4.543
+                       156.123,4.543">
+              </polygon>
+
+              <!--E-->
+              <path  id="e" class="wave" fill="#FFFFFF" d="M173.167,4.543H200V0h-26.833c-4.826,0.008-8.739,3.907-8.747,8.709v8.345
+                     c0.008,4.805,3.921,8.7,8.747,8.711H200v-4.543h-26.833c-2.288-0.004-4.182-1.889-4.185-4.168v-1.901h27.098v-4.542h-27.098
+                     V8.709C168.985,6.435,170.878,4.549,173.167,4.543z">
+              </path>
+
+            </g>
+            </svg>
+          </div> 
         </header>
         <div class="whi__docs__body">
             <div class="whi__docs__body__wrapper">
@@ -32,10 +120,13 @@
 
                 <h3>Demo</h3>
                 <div class="whi__docs__demo">
-                   <button class="js-loader-start">start loader</button>
-                   <button class="js-loader-stop">stop loader</button>
-                   <!-- Something to control the loader?  -->
-                   <script></script>
+                  <!--  translate tranformation button -->
+                   <button class="js-loader-start" >start loader</button>
+                   <button class="js-loader-stop" >stop loader</button>
+                   <!-- translate tranformation button( using css) -->
+                   <button class="js-loader-start2" >start loader css</button>
+                   <button class="js-loader-stop2" >stop loader css</button>
+                  
                 </div>
 
                 <h3>Inspiration</h3>
@@ -48,5 +139,12 @@
 
 
             </div> 
+
+            <hr/>
+            <!--<script type="text/javascript" src="demo.js"></script>-->
+            <!-- Jquery CDN -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+            <script type="text/javascript" src="demo-with-jquery.js"></script>
+    
     </body>
 </html>

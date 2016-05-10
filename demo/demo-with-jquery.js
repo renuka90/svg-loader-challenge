@@ -12,19 +12,33 @@ $(document).ready(function () {
 		$("#logo_svg").get(0).pauseAnimations();
 	});
 	//**********************************************
-	//for animation style2
+	//for animation with css
 	//initailly pause the animation
-	$("#white__logo").get(0).pauseAnimations();
 
 	//start2 funtion
 	$(".js-loader-start2").click(function(){
 
-		$("#white__logo").get(0).unpauseAnimations();
+		$("#white__logo .wave").css("-webkit-animation-play-state","running");
+		$("#white__logo .wave").css("animation-play-state","running");
 	});
 
 	//stop2 function
 	$(".js-loader-stop2").click(function(){
-		$("#white__logo").get(0).pauseAnimations();
+		//$("#white__logo").get(0).pauseAnimations();
+		$("#white__logo .wave").css("-webkit-animation-play-state","paused");
+		$("#white__logo .wave").css("animation-play-state","paused");
+	});
+	//*************************************************************************
+	//for opacity transformation animation
+	$("#white__logo3").get(0).pauseAnimations();
+
+	// start function
+	$(".js-loader-start3").click(function () {
+		$("#white__logo3").get(0).unpauseAnimations();
 	});
 
+	//stop function
+	$(".js-loader-stop3").click(function () {
+		$("#white__logo3").get(0).pauseAnimations();
+	});
 });

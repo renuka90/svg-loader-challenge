@@ -130,3 +130,82 @@ h4 {
 	padding: 15px;
 	border: 1px solid rgba(0, 0, 0, .15);
 }
+
+
+              /*
+                Translation animation making wave like structure by varing initial begin time for
+                each letter.
+
+                see first keyframe at 0%, shape is moved up by 30px,
+                at second frame at 50%, shape is moved down by 30 px below zero position, this
+                gives the effect of shape or letter moving down from top,
+
+                at last frame at 100%, shape is moved up by 30px from zero position, this
+                gives the effect of moving up from previous position at 50% state
+
+                so, basically, its at top initally, then send to bottom and then to top,
+                and repeated continuously
+
+                here, I also added opacity just like example below, to show that you
+                can have multiple effects at same time, you can see the example how it
+                looks in browser.
+
+              */
+          /*translate transformation style*/
+              @keyframes wave {
+                  0% {
+                      -webkit-transform: translate(0,-30px);
+                      -moz-transform: translate(0,-30px);
+                      -o-transform: translate(0,-30px);
+                      -ms-transform: translate(0,-30px);
+                      transform: translate(0,-30px);
+                      opacity:0.01;
+                  }
+                  50% {
+                      -webkit-transform: translate(0,30px);
+                      -moz-transform: translate(0,30px);
+                      -o-transform: translate(0,30px);
+                      -ms-transform: translate(0,30px);
+                      transform: translate(0,30px);
+                      opacity:1.0;
+                  }
+                  100% {
+                      -webkit-transform: translate(0,-30px);
+                      -moz-transform: translate(0,-30px);
+                      -o-transform: translate(0,-30px);
+                      -ms-transform: translate(0,-30px);
+                      transform: translate(0,-30px);
+                      opacity:0.01;
+                  }
+              }
+
+              .wave {
+                  animation-name: wave;
+                  -webkit-animation-play-state:paused;
+                  animation-play-state:paused;
+                  animation-duration: 2s;
+                  animation-iteration-count: infinite;
+              }
+
+              #w {
+                  -webkit-animation-delay: 0.2s; /* Chrome, Safari, Opera */
+                  animation-delay: 0.2s;
+              }
+              #h {
+                  -webkit-animation-delay: 0.4s; /* Chrome, Safari, Opera */
+                  animation-delay: 0.4s;
+              }
+              #i {
+                  -webkit-animation-delay: 0.6s; /* Chrome, Safari, Opera */
+                  animation-delay: 0.6s;
+              }
+              #t {
+                  -webkit-animation-delay: 0.8s; /* Chrome, Safari, Opera */
+                  animation-delay: 0.8s;
+              }
+              #e {
+                  -webkit-animation-delay: 1.0s; /* Chrome, Safari, Opera */
+                  animation-delay: 1.0s;
+              }
+
+              

@@ -37,12 +37,24 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
+gulp.task('html-demo2', function () {
+  gulp.src('./src/demo2.html')
+    .pipe(gulp.dest('./demo/'));
+  gulp.src('./demo/demo2.html')
+    .pipe(connect.reload());
+});
+
 /**
  * Open browser window with the default application.
  */
 gulp.task('open', function(){
   gulp.src(__filename)
   .pipe(open({uri: 'http://localhost:8080/demo.html'}));
+});
+
+gulp.task('open-demo2', function(){
+  gulp.src(__filename)
+  .pipe(open({uri: 'http://localhost:8080/demo2.html'}));
 });
 
 /**
@@ -54,4 +66,11 @@ gulp.task('watch', function () {
   gulp.watch(['./style.scss'], ['sass']);
 });
 
+gulp.task('watch-demo2', function () {
+  gulp.watch(['./src/demo2.html', './demo/**/*.css'], ['html-demo2']);
+  gulp.watch(['./style.scss'], ['sass']);
+});
+
 gulp.task('demo', ['sass','connect', 'watch', 'open']);
+
+gulp.task('demo2', ['sass','connect', 'watch-demo2', 'open-demo2']);
