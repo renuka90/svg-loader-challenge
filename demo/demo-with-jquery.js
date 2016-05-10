@@ -13,7 +13,7 @@ $(document).ready(function () {
 	});
 	//**********************************************
 	//for animation with css
-	//initailly pause the animation
+	//initailly pause the animation at css 
 
 	//start2 funtion
 	$(".js-loader-start2").click(function(){
@@ -24,13 +24,12 @@ $(document).ready(function () {
 
 	//stop2 function
 	$(".js-loader-stop2").click(function(){
-		//$("#white__logo").get(0).pauseAnimations();
 		$("#white__logo .wave").css("-webkit-animation-play-state","paused");
 		$("#white__logo .wave").css("animation-play-state","paused");
 	});
 	//*************************************************************************
 	//for opacity transformation animation
-	$("#white__logo3").get(0).pauseAnimations();
+	//$("#white__logo3").get(0).pauseAnimations();
 
 	// start function
 	$(".js-loader-start3").click(function () {
